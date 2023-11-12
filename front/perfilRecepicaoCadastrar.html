@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/perfilRecepcao.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="pefilPac">
+        <div id="perfil" >
+            <div id="ajustImas">
+                <a href="perfilRecepicaoMarcar.html"><img src="image/BackButton.svg" alt=""></a>
+            </div>
+            <div id="blocoAlign">
+            <div id="bloco">
+                <img src="image/openmoji_person.svg" alt="">
+            </div>
+            <h1 >Nome Exemplo da Silva</h1>
+        </div>
+            <div class="hpacient">
+                
+                
+            <div class="DatasCadastro" >
+                <form id="formajust" action="">
+                    <div class="inputlog">
+                        <h2>Nome Completo:</h2>
+                        <input id="name" type="text" >
+                    </div>
+                    <div class="inputlog">
+                        <h2 for="">E-mail:</h2>
+                        <input id="email" type="email" >
+                        <small id="textEmail"></small>
+                    </div>
+                    <div class="inputlog">
+                        <h2 for="">CPF:</h2>
+                        <input id="cpf"type="text" oninput="formatarCPF(this);"autocomplete="off" maxlength="14">
+                        <small id="textCpf"></small>
+                    </div>
+                    <div class="inputlog" >
+                        <h2 for="">Senha:</h2>
+                        <input id="password" type="password" >
+                        <small id="textPassword"></small>
+                    </div>
+                </form>
+            </div>
+            
+                
+            
+            <div>
+                <button onclick="cadastro(2)">Cadastrar paciente</button>
+                <p id="messageErro"></p>
+            </div>
+            
+        </div>
+        </div>  
+        
+   
+    </section>
+    <script src="js/Verificacao.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

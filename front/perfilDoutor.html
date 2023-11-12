@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+        <div class="janela">
+            <div class="icons">
+                <div class="menu-icons">
+                <a href="#"><img id="bolinha" src="img/janela-icons/Bolineas.svg" alt=""></a>
+                <a href="homePageLogada.html"><img src="img/janela-icons/BackButton.svg" alt=""></a>
+                </div>
+                <div class="logo-icon">
+                    <img src="img/janela-icons/Logo Include.svg" alt="">
+                </div>
+            </div>
+            <section class="medico-info">
+                <div class="medico-container">
+                    <img src="img/janela-icons/Fotinha.svg" alt="">
+                    <p id="name" class="nome-especialidade">Nome:</p>
+                    <p id="especialidade">Esp</p>
+                    <button id="especialidadeButton" class="botão-cadastro" onclick="cadastrarEspecialidade()">Cadastrar especialidade</button>
+                    <div id="janelaCadastro" class="cadastro-janela">
+                        <h1>Escolha sua especialidade</h1>
+                        <h2>(essa escolha não poderá ser alterada no futuro)</h2>
+                        <div class="especialidade-container">
+                            <div onclick="cadastroEspecialidade(this)" id="especialidadeCadastro" class="opcao-especialidade"><p>Psicólogo</p><img src="img/janela-icons/icon-park-solid_baby-feet.svg" alt=""></div>
+                            <div onclick="cadastroEspecialidade(this)" id="especialidadeCadastro" class="opcao-especialidade"><p>Obstetra</p><img src="img/janela-icons/icon-park-solid_baby-feet.svg" alt=""></div>
+                            <div onclick="cadastroEspecialidade(this)" id="especialidadeCadastro" class="opcao-especialidade"><p>Esportivo</p><img src="img/janela-icons/icon-park-solid_baby-feet.svg" alt=""></div>
+                            <div onclick="cadastroEspecialidade(this)" id="especialidadeCadastro" class="opcao-especialidade"><p>Geriatra</p><img src="img/janela-icons/icon-park-solid_baby-feet.svg" alt=""></div>
+                            <div onclick="cadastroEspecialidade(this)" id="especialidadeCadastro" class="opcao-especialidade"><p>Ginecologista</p><img src="img/janela-icons/icon-park-solid_baby-feet.svg" alt=""></div>
+                            <div onclick="cadastroEspecialidade(this)" id="especialidadeCadastro" class="opcao-especialidade"><p>Pediatra</p><img src="img/janela-icons/icon-park-solid_baby-feet.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="popup" class="PopupConfirmar ">
+                            <h2>Confirmar Escolha</h2>
+                            <h3 id="nomeEspecialidade">Especialidade</h3>
+                            <p>Para confirmar essa escolha digite "Confirmar" no campo abaixo:</p>
+                            <input id="especialidadeInput" type="text">
+                            <div id="Afastarbotao">
+                            <button onclick="confirmarButton()">Confirmar</button>
+                            <button id='buttonfechar' onclick="fecharPop()">Cancelar</button>
+                        </div>
+                </div>
+                </div>
+            </section>
+            <section class="pacientes">
+                <p id="pacientes-titulo">Pacientes de hoje:</p>
+                <div id= "container-pacientes" class="pacientes-container">
+                </div>
+                <div id="container-pop">
+                </div>
+            </section>
+        </div>
+        <script src="js/index.js"></script>
+        <script src="js/teste.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/MarcarCansulta.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="Headermarca">
+        <img id="LogoInclude" src="image/Logo Include.svg" alt="">
+        <div class="openmoji_person">
+            <a href="perfilPaciente.html">
+            <div>
+        <img id="Openmoji" src="image/openmoji_person.svg" alt="">
+        <h2>Meu perfil</h2>
+    </div>
+</a>
+<a onclick="deslogar()"><img id="ExitButton" src="image/ExitButton.svg" alt=""></a>
+    </div>
+        
+    </header> 
+
+    <div class="center">
+        <div id="retorno">
+            <a href="perfilPaciente.html"><img src="image/BackButton.svg" alt=""></a>
+        </div>
+    <div class="P1">
+        <h1>Filtrar por:</h1>
+        <div class="Filtrar">
+            <div >
+                <a class="medicocor" href="MarcarConsulta.html">
+                    <h2>Data:</h2>
+                </a>
+            </div>
+            <div>
+                <a class="medicocor" href="MarcarConsultaespecialidade.html">
+                <h2>Especialidade</h2>
+                </a>
+            </div>
+            <div>
+                <a href="MarcarConsultaMedico.html">
+                <h2>Médico</h2>
+                </a>
+            </div>
+        </div>
+        <h1>Médicos Encontrados:</h1>
+        <div id='medicoAchados-Container' class="Escolhamedico"> 
+            
+        </div>
+        </div>
+        <div class="EspEscolher">
+            <div class="pesquisa">
+        <h1>Digite o nome do médico:</h1>
+        <div>
+            <div id="flexData">
+            <input id="pesquisa" type="text">
+            <button onclick="filtroMedico()"><img src="imagerecepicao/material-symbols_search.svg" alt=""></button>
+    </div>
+    </div>
+</div>
+        <div class="Escolha">
+            <div >
+                <div class="boxDaBox">
+                    
+                <div>
+                <button onclick="filtrar()">Filtrar</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</div>
+<script src="js/marcarConsulta.js"></script>
+<script src="numeros.js"></script>
+<script src="js/index.js"></script>
+<script src="js/filtro.js"></script>
+<script src="corBotao.js"></script>
+</body>
+</html>
